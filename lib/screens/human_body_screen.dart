@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:human_body_doctor/screens/knee_screen.dart';
+import 'package:human_body_doctor/screens/quad_screen.dart';
 
 class HumanBodyScreen extends StatefulWidget {
   const HumanBodyScreen({super.key});
@@ -48,19 +49,28 @@ class _HumanBodyScreenState extends State<HumanBodyScreen> {
                     builder: (BuildContext context) => KneeScreen()));
           },
         ),
-        Positioned(
-            top: MediaQuery.of(context).size.height / 3,
-            left: MediaQuery.of(context).size.width / 3,
-            child: GestureDetector(
-              onTap: () {
-                print("Head tapped");
-              },
-              child: Container(
-                color: Colors.green,
-                width: 50,
-                height: 50,
-              ),
-            )),
+        BodyPart(
+            top: MediaQuery.of(context).size.height / 2.4,
+            left: MediaQuery.of(context).size.width / 3.2,
+            width: MediaQuery.of(context).size.width / 5.8,
+            height: MediaQuery.of(context).size.height / 7,
+            onTap: () {
+              print("Quad tapped");
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => QuadScreen()));
+            },
+            color: Colors.blue),
+        BodyPart(
+            top: MediaQuery.of(context).size.height / 2.4,
+            left: MediaQuery.of(context).size.width / 2.1,
+            width: MediaQuery.of(context).size.width / 5.8,
+            height: MediaQuery.of(context).size.height / 7,
+            onTap: () {
+              print("Quad tapped");
+            },
+            color: Colors.purple),
       ])),
     );
   }
