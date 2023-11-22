@@ -47,14 +47,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      print("head tapped");
+                      print("abs or chest tapped");
                     },
                     child: Padding(
                       padding: const EdgeInsets.only(left: 18.0, bottom: 10),
                       child: Container(
-                        width: 10,
-                        height: 120,
-                        color: Colors.transparent,
+                        width: 50,
+                        height: 50,
+                        color: Colors.green,
                       ),
                     ),
                   )
