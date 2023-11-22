@@ -26,7 +26,7 @@ class _QuadScreenState extends State<QuadScreen> {
                   child: Image.asset("assets/doctor_phone.png")),
               const SizedBox(height: 25),
               Text(
-                "Please explain the problem you are having with your quads",
+                "Please explain the problem you are having",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
               ),
               const SizedBox(height: 25),

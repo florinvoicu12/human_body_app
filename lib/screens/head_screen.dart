@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class KneeScreen extends StatefulWidget {
-  const KneeScreen({super.key});
+class HeadScreen extends StatefulWidget {
+  const HeadScreen({super.key});
 
   @override
-  State<KneeScreen> createState() => _KneeScreenState();
+  State<HeadScreen> createState() => _HeadScreenState();
 }
 
 final textController = TextEditingController();
 
-class _KneeScreenState extends State<KneeScreen> {
+class _HeadScreenState extends State<HeadScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +21,7 @@ class _KneeScreenState extends State<KneeScreen> {
         children: [
           Container(
               height: MediaQuery.of(context).size.height / 3.5,
-              child: Image.asset("assets/doctor_phone.png")),
+              child: Image.asset("assets/head_injuries.png")),
           const SizedBox(height: 25),
           Text(
             "Please explain the problem you are having",
@@ -42,7 +42,7 @@ class _KneeScreenState extends State<KneeScreen> {
           ),
           const SizedBox(height: 25),
           Text(
-            "These are the most frequent knee problems encountered by our users",
+            "These are solutions for the most frequent head injuries suffered by our users",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
           )
         ],
