@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:human_body_doctor/screens/home_screen.dart';
 import 'package:human_body_doctor/screens/human_body_screen.dart';
 
 void main() {
@@ -13,6 +14,6 @@ class DrinksOrdersApp extends StatelessWidget {
     return const MaterialApp(
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
-        home: HumanBodyScreen());
+        home: HomeScreen());
   }
 }
