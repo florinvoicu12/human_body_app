@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:human_body_doctor/screens/chest_screen.dart';
+import 'package:human_body_doctor/components/app_button.dart';
 import 'package:human_body_doctor/screens/home_screen.dart';
 
 class SplashScreen extends StatelessWidget {

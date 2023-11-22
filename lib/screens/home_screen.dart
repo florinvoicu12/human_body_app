@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:human_body_doctor/screens/abs_screen.dart';
+import 'package:human_body_doctor/screens/arms_screen.dart';
+import 'package:human_body_doctor/screens/calves_tibia_screen.dart';
 import 'package:human_body_doctor/screens/chest_screen.dart';
+import 'package:human_body_doctor/screens/foot_screen.dart';
 import 'package:human_body_doctor/screens/head_screen.dart';
 import 'package:human_body_doctor/screens/knee_screen.dart';
 import 'package:human_body_doctor/screens/quad_screen.dart';
@@ -92,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      print("pecs tapped");
+                      print("chest tapped");
                       Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -110,7 +114,48 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   GestureDetector(
                     onTap: () {
+                      print("arm tapped");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  const ArmsScreen()));
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4, top: 71),
+                      child: Container(
+                        width: 50,
+                        height: 84,
+                        color: Colors.deepOrange,
+                      ),
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      print("arm tapped");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  const ArmsScreen()));
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 187, top: 71),
+                      child: Container(
+                        width: 50,
+                        height: 84,
+                        color: Colors.deepOrange,
+                      ),
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
                       print("abs tapped");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  const AbsScreen()));
                     },
                     child: Padding(
                       padding: const EdgeInsets.only(left: 71.0, top: 88),
@@ -121,19 +166,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   ),
-                  GestureDetector(
-                    onTap: () {
-                      print("arm tapped");
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 4, top: 71),
-                      child: Container(
-                        width: 50,
-                        height: 84,
-                        color: Colors.deepOrange,
-                      ),
-                    ),
-                  )
                 ]),
               ),
               Center(
@@ -144,12 +176,35 @@ class _HomeScreenState extends State<HomeScreen> {
                   GestureDetector(
                     onTap: () {
                       print("arm tapped");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  const ArmsScreen()));
                     },
                     child: Padding(
                       padding: const EdgeInsets.only(left: 18.0, bottom: 0),
                       child: Container(
                         width: 50,
-                        height: 120,
+                        height: 95,
+                        color: Colors.brown,
+                      ),
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      print("arm tapped");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  const ArmsScreen()));
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 222.0, bottom: 0),
+                      child: Container(
+                        width: 50,
+                        height: 95,
                         color: Colors.brown,
                       ),
                     ),
@@ -157,6 +212,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   GestureDetector(
                     onTap: () {
                       print("abs tapped");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  const AbsScreen()));
                     },
                     child: Padding(
                       padding: const EdgeInsets.only(left: 95.0, bottom: 40),
@@ -235,7 +295,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           context,
                           MaterialPageRoute(
                               builder: (BuildContext context) =>
-                                  const KneeScreen()));
+                                  const CalvesTibiaScreen()));
                     },
                     child: Padding(
                       padding: const EdgeInsets.only(left: 36.0, top: 145),
@@ -253,7 +313,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           context,
                           MaterialPageRoute(
                               builder: (BuildContext context) =>
-                                  const KneeScreen()));
+                                  const FootScreen()));
                     },
                     child: Padding(
                       padding: const EdgeInsets.only(left: 36.0, top: 246),

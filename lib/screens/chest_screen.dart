@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:human_body_doctor/components/app_button.dart';
 
-class ChestScreen extends StatefulWidget {
+class ChestScreen extends StatelessWidget {
   const ChestScreen({super.key});
 
-  @override
-  State<ChestScreen> createState() => _ChestScreenState();
-}
-
-final textController = TextEditingController();
-
-class _ChestScreenState extends State<ChestScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +36,7 @@ class _ChestScreenState extends State<ChestScreen> {
           ),
           const SizedBox(height: 25),
           const Text(
-            "These are solutions for the most frequent head injuries suffered by our users",
+            "These are solutions for the most frequent chest problems suffered by our users",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
           ),
           Spacer(),
@@ -54,33 +48,4 @@ class _ChestScreenState extends State<ChestScreen> {
   }
 }
 
-class AppButton extends StatelessWidget {
-  const AppButton({
-    super.key,
-    required this.buttonText,
-    this.height,
-    this.color,
-    this.onPressed,
-  });
-  final Widget? buttonText;
-  final double? height;
-  final Color? color;
-  final void Function()? onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      height: height ?? MediaQuery.of(context).size.height / 16,
-      child: ElevatedButton(
-        onPressed: onPressed,
-        style: ElevatedButton.styleFrom(
-          shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(50 / 2)),
-          backgroundColor: color ?? Colors.blue,
-        ),
-        child: buttonText,
-      ),
-    );
-  }
-}
+final textController = TextEditingController();

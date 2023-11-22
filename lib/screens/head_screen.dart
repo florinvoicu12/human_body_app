@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:human_body_doctor/components/app_button.dart';
 
-class HeadScreen extends StatefulWidget {
+class HeadScreen extends StatelessWidget {
   const HeadScreen({super.key});
 
-  @override
-  State<HeadScreen> createState() => _HeadScreenState();
-}
-
-final textController = TextEditingController();
-
-class _HeadScreenState extends State<HeadScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +17,7 @@ class _HeadScreenState extends State<HeadScreen> {
               height: MediaQuery.of(context).size.height / 3.5,
               child: Image.asset("assets/head_injuries.png")),
           const SizedBox(height: 25),
-          Text(
+          const Text(
             "Please explain the problem you are having",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
           ),
@@ -35,18 +29,24 @@ class _HeadScreenState extends State<HeadScreen> {
             child: TextField(
               cursorColor: Colors.black,
               controller: textController,
-              decoration: InputDecoration(border: InputBorder.none),
+              decoration: const InputDecoration(border: InputBorder.none),
               minLines: 3,
               maxLines: 10,
             ),
           ),
           const SizedBox(height: 25),
-          Text(
+          const Text(
             "These are solutions for the most frequent head injuries suffered by our users",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
-          )
+          ),
+          const Spacer(),
+          AppButton(
+              buttonText: const Text("Back"),
+              onPressed: () => Navigator.pop(context))
         ],
       ),
     )));
   }
 }
+
+final textController = TextEditingController();

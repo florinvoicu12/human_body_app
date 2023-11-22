@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:human_body_doctor/components/app_button.dart';
 
-class QuadScreen extends StatelessWidget {
-  const QuadScreen({super.key});
+class CalvesTibiaScreen extends StatelessWidget {
+  const CalvesTibiaScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +38,7 @@ class QuadScreen extends StatelessWidget {
               ),
               const SizedBox(height: 25),
               const Text(
-                "These are the most frequent quads problems encountered by our users",
+                "These are the most frequent calves problems encountered by our users",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
               ),
               const Spacer(),

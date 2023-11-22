@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:human_body_doctor/components/app_button.dart';
 
-class KneeScreen extends StatefulWidget {
+class KneeScreen extends StatelessWidget {
   const KneeScreen({super.key});
 
-  @override
-  State<KneeScreen> createState() => _KneeScreenState();
-}
-
-final textController = TextEditingController();
-
-class _KneeScreenState extends State<KneeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +17,7 @@ class _KneeScreenState extends State<KneeScreen> {
               height: MediaQuery.of(context).size.height / 3.5,
               child: Image.asset("assets/doctor_phone.png")),
           const SizedBox(height: 25),
-          Text(
+          const Text(
             "Please explain the problem you are having",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
           ),
@@ -35,18 +29,24 @@ class _KneeScreenState extends State<KneeScreen> {
             child: TextField(
               cursorColor: Colors.black,
               controller: textController,
-              decoration: InputDecoration(border: InputBorder.none),
+              decoration: const InputDecoration(border: InputBorder.none),
               minLines: 3,
               maxLines: 10,
             ),
           ),
           const SizedBox(height: 25),
-          Text(
+          const Text(
             "These are the most frequent knee problems encountered by our users",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
-          )
+          ),
+          const Spacer(),
+          AppButton(
+              buttonText: const Text("Back"),
+              onPressed: () => Navigator.pop(context))
         ],
       ),
     )));
   }
 }
+
+final textController = TextEditingController();
