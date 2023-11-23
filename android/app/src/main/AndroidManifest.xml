@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="human_body_doctor"
+        android:label="Pocket Physio"
         android:name="${applicationName}"
         android:icon="@drawable/human_body">
         <activity
