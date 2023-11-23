@@ -4,6 +4,7 @@ import 'package:human_body_doctor/screens/arms_screen.dart';
 import 'package:human_body_doctor/screens/calves_tibia_screen.dart';
 import 'package:human_body_doctor/screens/chest_screen.dart';
 import 'package:human_body_doctor/screens/foot_screen.dart';
+import 'package:human_body_doctor/screens/hand_screen.dart';
 import 'package:human_body_doctor/screens/head_screen.dart';
 import 'package:human_body_doctor/screens/knee_screen.dart';
 import 'package:human_body_doctor/screens/quad_screen.dart';
@@ -20,7 +21,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Human body screen 2")),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: SafeArea(
@@ -72,7 +72,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         width: 50,
                         height: 60,
-                        color: Colors.green,
+                        // color: Colors.green,
+                        color: Colors.transparent,
                       ),
                     ),
                   ),
@@ -90,7 +91,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         width: 50,
                         height: 60,
-                        color: Colors.purple,
+                        // color: Colors.purple,
+                        color: Colors.transparent,
                       ),
                     ),
                   ),
@@ -108,7 +110,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         width: 98,
                         height: 70,
-                        color: Colors.blue,
+                        // color: Colors.blue,
+                        color: Colors.transparent,
                       ),
                     ),
                   ),
@@ -126,7 +129,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         width: 50,
                         height: 84,
-                        color: Colors.deepOrange,
+                        // color: Colors.deepOrange,
+                        color: Colors.transparent,
                       ),
                     ),
                   ),
@@ -144,7 +148,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         width: 50,
                         height: 84,
-                        color: Colors.deepOrange,
+                        // color: Colors.deepOrange,
+                        color: Colors.transparent,
                       ),
                     ),
                   ),
@@ -162,7 +167,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         width: 98,
                         height: 70,
-                        color: Colors.yellow,
+                        // color: Colors.yellow,
+                        color: Colors.transparent,
                       ),
                     ),
                   ),
@@ -187,7 +193,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         width: 50,
                         height: 95,
-                        color: Colors.brown,
+                        // color: Colors.brown,
+                        color: Colors.transparent,
                       ),
                     ),
                   ),
@@ -205,7 +212,46 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         width: 50,
                         height: 95,
-                        color: Colors.brown,
+                        // color: Colors.brown,
+                        color: Colors.transparent,
+                      ),
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      print("hand tapped");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  const HandScreen()));
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 0.0, top: 95),
+                      child: Container(
+                        width: 55,
+                        height: 72,
+                        // color: Colors.brown,
+                        color: Colors.transparent,
+                      ),
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      print("hand tapped");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  const HandScreen()));
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 235.0, top: 95),
+                      child: Container(
+                        width: 55,
+                        height: 72,
+                        // color: Colors.brown,
+                        color: Colors.transparent,
                       ),
                     ),
                   ),
@@ -223,7 +269,27 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         width: 98,
                         height: 60,
-                        color: Colors.grey,
+                        // color: Colors.grey,
+                        color: Colors.transparent,
+                      ),
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      print("stefan tapped");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  const AbsScreen()));
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 95.0, top: 60),
+                      child: Container(
+                        width: 98,
+                        height: 70,
+                        // color: Colors.brown,
+                        color: Colors.transparent,
                       ),
                     ),
                   ),
@@ -237,11 +303,12 @@ class _HomeScreenState extends State<HomeScreen> {
                                   const QuadScreen()));
                     },
                     child: Padding(
-                      padding: const EdgeInsets.only(left: 72.0, top: 100),
+                      padding: const EdgeInsets.only(left: 72.0, top: 130),
                       child: Container(
                         width: 142,
-                        height: 74,
-                        color: Colors.red,
+                        height: 43,
+                        // color: Colors.red,
+                        color: Colors.transparent,
                       ),
                     ),
                   )
@@ -266,7 +333,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         width: 145,
                         height: 85,
-                        color: Colors.blue,
+                        // color: Colors.blue,
+                        color: Colors.transparent,
                       ),
                     ),
                   ),
@@ -284,7 +352,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         width: 125,
                         height: 58,
-                        color: Colors.black,
+                        // color: Colors.black,
+                        color: Colors.transparent,
                       ),
                     ),
                   ),
@@ -302,7 +371,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         width: 125,
                         height: 100,
-                        color: Colors.deepOrange,
+                        // color: Colors.deepOrange,
+                        color: Colors.transparent,
                       ),
                     ),
                   ),
@@ -320,7 +390,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Container(
                         width: 125,
                         height: 60,
-                        color: Colors.deepPurple,
+                        // color: Colors.deepPurple,
+                        color: Colors.transparent,
                       ),
                     ),
                   )

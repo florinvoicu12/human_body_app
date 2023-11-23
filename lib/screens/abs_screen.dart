@@ -15,7 +15,7 @@ class AbsScreen extends StatelessWidget {
         children: [
           Container(
               height: MediaQuery.of(context).size.height / 3.5,
-              child: Image.asset("assets/chest_pain.png")),
+              child: Image.asset("assets/abs_pain.png")),
           const SizedBox(height: 25),
           const Text(
             "Please explain the problem you are having",
@@ -39,9 +39,10 @@ class AbsScreen extends StatelessWidget {
             "These are solutions for the most frequent abdominal problems suffered by our users",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
           ),
-          Spacer(),
+          const Spacer(),
           AppButton(
-              buttonText: Text("Back"), onPressed: () => Navigator.pop(context))
+              buttonText: const Text("Back"),
+              onPressed: () => Navigator.pop(context))
         ],
       ),
     )));

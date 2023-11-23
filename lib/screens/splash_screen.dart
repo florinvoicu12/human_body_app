@@ -1,10 +1,28 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:human_body_doctor/components/app_button.dart';
 import 'package:human_body_doctor/screens/home_screen.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  startTime() async {
+    return Timer(const Duration(seconds: 3), navigationPage);
+  }
+
+  void navigationPage() {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (BuildContext context) => const HomeScreen()));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +39,7 @@ class SplashScreen extends StatelessWidget {
                     width: double.infinity,
                     child: AppButton(
                         buttonText: const Text(
-                          "Sign up",
+                          "Get started",
                           style: TextStyle(color: Colors.blue),
                         ),
                         color: Colors.yellow,
@@ -29,26 +47,26 @@ class SplashScreen extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                   builder: (BuildContext context) =>
-                                      HomeScreen()),
+                                      const HomeScreen()),
                             ))),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 20),
-                  child: SizedBox(
-                    width: double.infinity,
-                    child: AppButton(
-                        buttonText: const Text(
-                          "Sign in",
-                          style: TextStyle(color: Colors.yellow),
-                        ),
-                        color: Colors.green,
-                        onPressed: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (BuildContext context) =>
-                                      HomeScreen()),
-                            )),
-                  ),
-                )
+                // Padding(
+                //   padding: const EdgeInsets.symmetric(vertical: 20),
+                //   child: SizedBox(
+                //     width: double.infinity,
+                //     child: AppButton(
+                //         buttonText: const Text(
+                //           "Sign in",
+                //           style: TextStyle(color: Colors.yellow),
+                //         ),
+                //         color: Colors.green,
+                //         onPressed: () => Navigator.push(
+                //               context,
+                //               MaterialPageRoute(
+                //                   builder: (BuildContext context) =>
+                //                       HomeScreen()),
+                //             )),
+                //   ),
+                // )
               ],
             ),
           ),

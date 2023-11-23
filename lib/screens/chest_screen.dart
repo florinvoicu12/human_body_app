@@ -39,9 +39,10 @@ class ChestScreen extends StatelessWidget {
             "These are solutions for the most frequent chest problems suffered by our users",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
           ),
-          Spacer(),
+          const Spacer(),
           AppButton(
-              buttonText: Text("Back"), onPressed: () => Navigator.pop(context))
+              buttonText: const Text("Back"),
+              onPressed: () => Navigator.pop(context))
         ],
       ),
     )));

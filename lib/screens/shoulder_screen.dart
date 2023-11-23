@@ -41,7 +41,8 @@ class ShoulderScreen extends StatelessWidget {
           ),
           const Spacer(),
           AppButton(
-              buttonText: Text("Back"), onPressed: () => Navigator.pop(context))
+              buttonText: const Text("Back"),
+              onPressed: () => Navigator.pop(context))
         ],
       ),
     )));

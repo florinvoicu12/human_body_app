@@ -17,7 +17,7 @@ class QuadScreen extends StatelessWidget {
             children: [
               Container(
                   height: MediaQuery.of(context).size.height / 3.5,
-                  child: Image.asset("assets/doctor_phone.png")),
+                  child: Image.asset("assets/quad_pain.png")),
               const SizedBox(height: 25),
               const Text(
                 "Please explain the problem you are having",

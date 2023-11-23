@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:human_body_doctor/components/app_button.dart';
 
-class KneeScreen extends StatelessWidget {
-  const KneeScreen({super.key});
+class HandScreen extends StatelessWidget {
+  const HandScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class KneeScreen extends StatelessWidget {
         children: [
           Container(
               height: MediaQuery.of(context).size.height / 3.5,
-              child: Image.asset("assets/knee_pain.png")),
+              child: Image.asset("assets/hand_pain.png")),
           const SizedBox(height: 25),
           const Text(
             "Please explain the problem you are having",
@@ -36,7 +36,7 @@ class KneeScreen extends StatelessWidget {
           ),
           const SizedBox(height: 25),
           const Text(
-            "These are the most frequent knee problems encountered by our users",
+            "These are solutions for the most frequent hand problems suffered by our users",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
           ),
           const Spacer(),
