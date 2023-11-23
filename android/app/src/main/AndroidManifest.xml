@@ -2,7 +2,7 @@
     <application
         android:label="human_body_doctor"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@drawable/human_body">
         <activity
             android:name=".MainActivity"
             android:exported="true"
