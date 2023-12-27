@@ -26,12 +26,15 @@ class ArmsScreen extends StatelessWidget {
             decoration: BoxDecoration(
                 color: Colors.grey.withAlpha(30),
                 borderRadius: BorderRadius.circular(12)),
-            child: TextField(
-              cursorColor: Colors.black,
-              controller: textController,
-              decoration: const InputDecoration(border: InputBorder.none),
-              minLines: 3,
-              maxLines: 10,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 15.0),
+              child: TextField(
+                cursorColor: Colors.black,
+                controller: textController,
+                decoration: const InputDecoration(border: InputBorder.none),
+                minLines: 3,
+                maxLines: 10,
+              ),
             ),
           ),
           const SizedBox(height: 25),
